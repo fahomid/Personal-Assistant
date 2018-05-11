@@ -1,0 +1,10 @@
+Options All -Indexes
+IndexIgnore *
+RewriteEngine on
+RewriteRule ^login/$ pages/login.php
+RewriteRule ^dashboard/$ pages/dashboard.php
+RewriteRule ^signup/$ pages/signup.php
+RewriteRule ^logout/$ pages/logout.php
+RewriteRule ^forget_password/$ pages/forgot.php
+RewriteRule ^file/(.*)/(.*).(.*)$ lib/files.php?file_id=$1&image=1
+RewriteRule ^file/(.*)/$ lib/files.php?file_id=$1
